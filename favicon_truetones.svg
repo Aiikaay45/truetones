@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <clipPath id="circle-clip">
+      <circle cx="32" cy="32" r="32"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background circle — deep dark brown -->
+  <circle cx="32" cy="32" r="32" fill="#2A1F1A"/>
+
+  <!-- Subtle inner ring accent -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#A0522D" stroke-width="0.8" opacity="0.5"/>
+
+  <!-- Leaf / botanical top accent -->
+  <path d="M32 8 C28 12, 24 16, 26 20 C28 24, 32 22, 32 22 C32 22, 36 24, 38 20 C40 16, 36 12, 32 8Z"
+        fill="#A0522D" opacity="0.85"/>
+
+  <!-- TT monogram — elegant, thin weight -->
+  <!-- Left T -->
+  <line x1="16" y1="28" x2="27" y2="28" stroke="#E8C5A8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="21.5" y1="28" x2="21.5" y2="44" stroke="#E8C5A8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Right T -->
+  <line x1="27" y1="28" x2="48" y2="28" stroke="#E8C5A8" stroke-width="2" stroke-linecap="round"/>
+  <line x1="37.5" y1="28" x2="37.5" y2="44" stroke="#E8C5A8" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Tiny dot accent below — like a skincare drop -->
+  <circle cx="32" cy="50" r="1.5" fill="#A0522D" opacity="0.7"/>
+</svg>
