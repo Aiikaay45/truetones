@@ -28,7 +28,7 @@
         <a :href="waLink" target="_blank" rel="noopener noreferrer">WhatsApp Us</a>
         <a href="mailto:talk.to.dr.oghosa@gmail.com">Email Dr Oghosa</a>
         <a href="#about">About Dr Oghosa</a>
-        <a href="#contact">Book a Consultation</a>
+        <a href="#booking-form">Book a Consultation</a>
       </nav>
 
     </div>
@@ -95,7 +95,7 @@ import { ref, watch } from 'vue'
 import { useWhatsApp } from '@/composables/useWhatsApp'
 
 const { directLink } = useWhatsApp()
-const waLink         = directLink()
+const waLink         = directLink("Hello, Dr Oghosa\nI'd like to book a skincare consultation")
 const year           = new Date().getFullYear()
 const showTerms      = ref(false)
 

@@ -52,8 +52,9 @@ export function useWhatsApp() {
   }
 
   /** Direct WhatsApp link (no form — used in nav / hero CTAs) */
-  function directLink() {
-    return `https://wa.me/${WA_NUMBER}`
+  function directLink(text) {
+    const base = `https://wa.me/${WA_NUMBER}`
+    return text ? `${base}?text=${encodeURIComponent(text)}` : base
   }
 
   return { form, services, openWhatsApp, directLink }
