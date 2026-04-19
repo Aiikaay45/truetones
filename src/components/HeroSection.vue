@@ -26,11 +26,16 @@
 
     <!-- Right image -->
     <div class="hero__right" aria-hidden="true">
-      <img
-        src="/images/hero_image.jpeg"
-        alt="Dr Oghosa — True Tones Skin Therapist"
-        loading="eager"
-      />
+      <picture>
+        <source srcset="/images/hero_image.webp" type="image/webp" />
+        <img
+          src="/images/hero_image.jpeg"
+          alt="Dr Oghosa — True Tones Skin Therapist"
+          loading="eager"
+          fetchpriority="high"
+          decoding="async"
+        />
+      </picture>
       <div class="hero__overlay" aria-hidden="true" />
 
       <!-- Floating badge -->
@@ -143,6 +148,12 @@ function scrollToPackages() {
   position: relative;
   overflow: hidden;
   background: var(--terracotta-pale);
+
+  picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 
   img {
     width: 100%;

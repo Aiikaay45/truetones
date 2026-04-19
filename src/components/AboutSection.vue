@@ -4,11 +4,15 @@
     <!-- Image column -->
     <div class="about__image-wrap">
     
-      <img
-        src="/images/dr_oghosa.jpeg"
-        alt="Dr Oghosa, founder of True Tones Skin Therapy"
-        loading="lazy"
-      />
+      <picture>
+        <source srcset="/images/dr_oghosa.webp" type="image/webp" />
+        <img
+          src="/images/dr_oghosa.jpeg"
+          alt="Dr Oghosa, founder of True Tones Skin Therapy"
+          loading="lazy"
+          decoding="async"
+        />
+      </picture>
       <!-- <div class="about__img-ring about__img-ring--lg" aria-hidden="true" />
       <div class="about__img-ring about__img-ring--sm" aria-hidden="true" /> -->
     </div>
@@ -77,6 +81,12 @@ onMounted(() => observe(root.value))
   overflow: hidden;
   background: var(--cream-dark);
   min-height: 560px;
+
+  picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
 
   img {
     width: 100%;
