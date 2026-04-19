@@ -6,7 +6,7 @@ const pendingService = ref('')
 export function useBooking() {
   function selectAndScroll(serviceTitle) {
     pendingService.value = serviceTitle
-    const el = document.getElementById('contact')
+    const el = document.getElementById('booking-form')
     if (el) el.scrollIntoView({ behavior: 'smooth' })
   }
 
